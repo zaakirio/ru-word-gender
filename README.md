@@ -2,6 +2,8 @@
 
 A minimal web application for identifying the grammatical gender of Russian words.
 
+https://ru-word-gender.vercel.app
+
 ## Features
 
 - Real-time gender identification as you type
