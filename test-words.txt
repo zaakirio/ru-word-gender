@@ -1,0 +1,22 @@
+Test words for Russian gender identification:
+
+Masculine (должны быть мужского рода):
+- дом (house) - ends in consonant
+- стол (table) - ends in consonant  
+- день (day) - ends in ь but is masculine
+- учитель (teacher) - ends in -тель
+- папа (dad) - exception, masculine despite -а ending
+
+Feminine (должны быть женского рода):
+- мама (mom) - ends in -а
+- земля (earth) - ends in -я
+- ночь (night) - ends in ь, feminine
+- радость (joy) - ends in -ость
+- тетрадь (notebook) - ends in ь, feminine
+
+Neuter (должны быть среднего рода):
+- окно (window) - ends in -о
+- море (sea) - ends in -е
+- солнце (sun) - ends in -е
+- время (time) - exception, neuter despite -я
+- имя (name) - exception, neuter despite -я
