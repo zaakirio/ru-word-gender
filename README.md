@@ -1,13 +1,42 @@
-# React + Vite
+# Russian Word Gender Identifier
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal web application for identifying the grammatical gender of Russian words.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time gender identification as you type
+- Support for Russian and English interfaces
+- Clean, distraction-free design
+- Handles common exceptions and special cases
+- Visual feedback for invalid input
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ru-word-gender
+Enter any Russian word in Cyrillic script to identify whether it is masculine, feminine, or neuter. The app uses standard grammatical rules and patterns to determine gender based on word endings.
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Rules
+
+The application identifies gender based on standard Russian grammar patterns:
+
+- **Masculine**: Words ending in consonants or -й
+- **Feminine**: Words ending in -а, -я, or soft sign (ь)
+- **Neuter**: Words ending in -о, -е, or -ё
+
+Special handling for exceptions like папа (masculine despite -а ending) and время (neuter despite -я ending).
+
+## Technologies
+
+Built with React and Vite for optimal performance and development experience.
